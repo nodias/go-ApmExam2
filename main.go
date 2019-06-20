@@ -1,50 +1,13 @@
 package main
 
 import (
-	"log"
-	"net/http"
-	"strconv"
-
-	"go.elastic.co/apm/module/apmgorilla"
-
-	"github.com/gorilla/mux"
-	common "github.com/nodias/go-ApmCommon"
-	"github.com/nodias/go-ApmExam2/api"
+	"github.com/nodias/go-ApmCommon/middleware"
+	"github.com/nodias/go-ApmExam2/router"
 	"github.com/urfave/negroni"
 )
 
 func main() {
-	router := mux.NewRouter()
-	router.HandleFunc("/users", GetUsers).Methods("GET")
-	router.HandleFunc("/user/{id}", GetUser)
-	router.Use(apmgorilla.Middleware())
-	n := negroni.New(negroni.HandlerFunc(common.LoggingMiddleware))
-	n.UseHandler(router)
+	n := negroni.New(negroni.HandlerFunc(middleware.LoggingMiddleware))
+	n.UseHandler(router.NewRouter())
 	n.Run(":7002")
-}
-
-func GetUsers(w http.ResponseWriter, req *http.Request) {
-	data, err := api.ApiGetUsers()
-	if err != nil {
-		log.Printf("GetUsers : %s", err)
-		data = []byte(err.Error())
-	}
-	w.Write(data)
-	return
-}
-
-func GetUser(w http.ResponseWriter, req *http.Request) {
-	params := mux.Vars(req)
-	uid_str := params["id"]
-	uid, err := strconv.Atoi(uid_str)
-	if err != nil {
-		log.Fatalf("GetUser : %s", err)
-	}
-	data, err := api.ApiGetUser(uid)
-	if err != nil {
-		log.Printf("GetUser : %s", err)
-		data = []byte(err.Error())
-	}
-	w.Write(data)
-	return
 }
