@@ -8,6 +8,7 @@ import (
 	"go.elastic.co/apm/module/apmgorilla"
 
 	"github.com/gorilla/mux"
+	common "github.com/nodias/go-ApmCommon"
 	"github.com/nodias/go-ApmExam2/api"
 	"github.com/urfave/negroni"
 )
@@ -17,7 +18,7 @@ func main() {
 	router.HandleFunc("/users", GetUsers).Methods("GET")
 	router.HandleFunc("/user/{id}", GetUser)
 	router.Use(apmgorilla.Middleware())
-	n := negroni.Classic()
+	n := negroni.New(negroni.HandlerFunc(common.LoggingMiddleware))
 	n.UseHandler(router)
 	n.Run(":7002")
 }

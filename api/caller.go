@@ -19,7 +19,7 @@ func ApiGetUsers() ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	log.Printf("$s\n", string(data))
+	log.Printf("%s\n", string(data))
 	return data, nil
 }
 
@@ -36,6 +36,6 @@ func ApiGetUser(uid int) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	log.Printf("$s\n", string(data))
+	log.Printf("%s\n", string(data))
 	return data, nil
 }
