@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/nodias/go-ApmCommon/model"
+	"go-ApmCommon/model"
 	"go.elastic.co/apm"
 	"go.elastic.co/apm/module/apmhttp"
 )

@@ -70,7 +70,7 @@
 		},
 		{
 			"checksumSHA1": "9W7BlTiKXZWbLadqzlmiA9nEj74=",
-			"path": "github.com/nodias/go-ApmCommon/middleware",
+			"path": "go-ApmCommon/middleware",
 			"revision": "200c18f8b2e409db5aa3c85e722cbc329740c0b7",
 			"revisionTime": "2019-06-20T08:48:00Z"
 		},
@@ -225,5 +225,5 @@
 			"revisionTime": "2018-11-24T03:47:31Z"
 		}
 	],
-	"rootPath": "github.com/nodias/go-ApmExam2"
+	"rootPath": "go-ApmExam2"
 }
