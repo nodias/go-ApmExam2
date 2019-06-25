@@ -3,6 +3,13 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "rcoUTEGR7KVr963l6P1rlMaYCzA=",
+			"origin": "go-ApmCommon/vendor/github.com/BurntSushi/toml",
+			"path": "github.com/BurntSushi/toml",
+			"revision": "01e73db1f3da13d9a84fb781edd138ebb47b0078",
+			"revisionTime": "2019-06-25T01:44:59Z"
+		},
+		{
 			"checksumSHA1": "/Q6YV6eYVMue9P26faFismXwEjM=",
 			"path": "github.com/armon/go-radix",
 			"revision": "1a2de0c21c94309923825da3df33a4381872c795",
@@ -69,10 +76,11 @@
 			"revisionTime": "2014-01-24T17:37:10Z"
 		},
 		{
-			"checksumSHA1": "9W7BlTiKXZWbLadqzlmiA9nEj74=",
-			"path": "go-ApmCommon/middleware",
-			"revision": "200c18f8b2e409db5aa3c85e722cbc329740c0b7",
-			"revisionTime": "2019-06-20T08:48:00Z"
+			"checksumSHA1": "Z7rkupTQRAZzzTCqDLiSbNR70to=",
+			"origin": "go-ApmCommon/vendor/github.com/konsorten/go-windows-terminal-sequences",
+			"path": "github.com/konsorten/go-windows-terminal-sequences",
+			"revision": "01e73db1f3da13d9a84fb781edd138ebb47b0078",
+			"revisionTime": "2019-06-25T01:44:59Z"
 		},
 		{
 			"checksumSHA1": "CUU7ZZtxuc1mpbM8XKrSTNiy/yM=",
@@ -81,10 +89,35 @@
 			"revisionTime": "2019-02-27T00:00:51Z"
 		},
 		{
+			"checksumSHA1": "NklIc+ObuqosIKzqKcPtFdCcTao=",
+			"origin": "go-ApmCommon/vendor/github.com/sirupsen/logrus",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "01e73db1f3da13d9a84fb781edd138ebb47b0078",
+			"revisionTime": "2019-06-25T01:44:59Z"
+		},
+		{
 			"checksumSHA1": "qzA1dLWFE6MPPuC2s38tYp5pSYE=",
 			"path": "github.com/urfave/negroni",
 			"revision": "0ce192d0bd24e9ec58b05bc72b3eac5bcc4f6517",
 			"revisionTime": "2019-04-08T19:14:22Z"
+		},
+		{
+			"checksumSHA1": "EC1gB9xOcnvxuLB9WT2ncVjHam0=",
+			"path": "go-ApmCommon/logger",
+			"revision": "01e73db1f3da13d9a84fb781edd138ebb47b0078",
+			"revisionTime": "2019-06-25T01:44:59Z"
+		},
+		{
+			"checksumSHA1": "9W7BlTiKXZWbLadqzlmiA9nEj74=",
+			"path": "go-ApmCommon/middleware",
+			"revision": "200c18f8b2e409db5aa3c85e722cbc329740c0b7",
+			"revisionTime": "2019-06-20T08:48:00Z"
+		},
+		{
+			"checksumSHA1": "JwCz5TMSKOsm+TnOBAp2hr+ecVY=",
+			"path": "go-ApmCommon/model",
+			"revision": "01e73db1f3da13d9a84fb781edd138ebb47b0078",
+			"revisionTime": "2019-06-25T01:44:59Z"
 		},
 		{
 			"checksumSHA1": "gRsHuqWyEwKWERzsquds18+n7Ak=",
