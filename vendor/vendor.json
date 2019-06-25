@@ -99,6 +99,24 @@
 			"revisionTime": "2019-04-08T19:14:22Z"
 		},
 		{
+			"checksumSHA1": "EC1gB9xOcnvxuLB9WT2ncVjHam0=",
+			"path": "go-ApmCommon/logger",
+			"revision": "15b60bf355543efde5f5b5aa2f69db7c43cf94ab",
+			"revisionTime": "2019-06-25T08:02:20Z"
+		},
+		{
+			"checksumSHA1": "4ErQHB4/+J+tJ3ShM+kAbvlSp9s=",
+			"path": "go-ApmCommon/middleware",
+			"revision": "15b60bf355543efde5f5b5aa2f69db7c43cf94ab",
+			"revisionTime": "2019-06-25T08:02:20Z"
+		},
+		{
+			"checksumSHA1": "5BNYGqqsESjLRMSy5delAw5/92s=",
+			"path": "go-ApmCommon/model",
+			"revision": "15b60bf355543efde5f5b5aa2f69db7c43cf94ab",
+			"revisionTime": "2019-06-25T08:02:20Z"
+		},
+		{
 			"checksumSHA1": "gRsHuqWyEwKWERzsquds18+n7Ak=",
 			"path": "go.elastic.co/apm",
 			"revision": "e4280e65f8a7c0ed9f1c35ad115363828866d792",
