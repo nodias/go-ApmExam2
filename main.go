@@ -12,7 +12,7 @@ import (
 var config model.TomlConfig
 
 func init() {
-	config.New("config.toml")
+	config.Load()
 	//EXPORT APM EXVIRONMENT
 	os.Setenv("ELASTIC_APM_SERVER_URL", config.ApmServerUrl())
 	os.Setenv("ELASTIC_APM_SERVICE_NAME", config.Service)
