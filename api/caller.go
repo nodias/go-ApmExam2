@@ -17,7 +17,7 @@ var client = apmhttp.WrapClient(http.DefaultClient)
 var config model.TomlConfig
 
 func init() {
-	config.Load()
+	config.Load("config/%s/config.toml")
 }
 
 func ApiGetUserInfo(ctx context.Context, id string) ([]byte, error) {

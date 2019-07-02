@@ -11,7 +11,7 @@ import (
 var config model.TomlConfig
 
 func init() {
-	config.Load()
+	config.Load("config/%s/config.toml")
 }
 func main() {
 	n := negroni.New(negroni.HandlerFunc(middleware.NewLoggingMiddleware(config.Logpaths.Logpath)))
