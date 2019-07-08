@@ -2,20 +2,20 @@ package main
 
 import (
 	"context"
-	"go-ApmCommon/logger"
-	"go-ApmCommon/middleware"
-	"go-ApmCommon/model"
+	"go-ApmCommon/models"
+	"go-ApmCommon/shared/logger"
+	"go-ApmCommon/shared/middleware"
 	"go-ApmExam2/api"
 	"go-ApmExam2/router"
 
 	"github.com/urfave/negroni"
 )
 
-var config model.TomlConfig
+var config models.TomlConfig
 
 func init() {
-	model.Load("config/%s/config.toml")
-	config = *model.GetConfig()
+	models.Load("config/%s/config.toml")
+	config = *models.GetConfig()
 	logger.Init()
 	api.Init()
 	log := logger.New(context.Background())

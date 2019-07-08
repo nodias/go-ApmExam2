@@ -3,21 +3,21 @@ package api
 import (
 	"context"
 	"fmt"
+	"go-ApmCommon/models"
 	"io/ioutil"
 	"log"
 	"net/http"
 
-	"go-ApmCommon/model"
 
 	"go.elastic.co/apm"
 	"go.elastic.co/apm/module/apmhttp"
 )
 
 var client = apmhttp.WrapClient(http.DefaultClient)
-var config model.TomlConfig
+var config models.TomlConfig
 
 func Init() {
-	config = *model.GetConfig()
+	config = *models.GetConfig()
 }
 
 func ApiGetUserInfo(ctx context.Context, id string) ([]byte, error) {
