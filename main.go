@@ -18,11 +18,11 @@ func init() {
 	config = *model.GetConfig()
 	logger.Init()
 	api.Init()
-	log := logger.NewLogger(context.Background())
+	log := logger.New(context.Background())
 	log.Info(config)
 }
 func main() {
-	n := negroni.New(negroni.HandlerFunc(middleware.NewLoggingMiddleware(config.Logconfig.Logpath)))
+	n := negroni.New(negroni.HandlerFunc(middleware.Logging(config.Logconfig.Logpath)))
 	n.UseHandler(router.NewRouter())
 	n.Run(config.Servers["ApmExam2"].PORT)
 }
