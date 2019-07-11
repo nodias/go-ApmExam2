@@ -2,7 +2,7 @@ service = "go-ApmExam2"
 
 [logconfig]
     logpath = "C:/workspace/logs/go-ApmExam2.log"
-    loglevel = 5
+    loglevel = "debug"
 
 [databases]
     [databases.postgres]
